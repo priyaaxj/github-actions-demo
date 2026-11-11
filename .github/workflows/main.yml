@@ -18,7 +18,11 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Run Test
-      run: |
-        echo "Hello from GitHub Actions"
-        python --version
+    - name: Show Files
+      run: ls -la
+
+    - name: Print Message
+      run: echo "GitHub Actions is running successfully"
+
+    - name: Show Python Version
+      run: python --version
